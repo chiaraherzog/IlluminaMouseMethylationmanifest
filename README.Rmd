@@ -1,0 +1,24 @@
+---
+title: "IlluminaMouseMethylationmanifest readme"
+author: "Chiara Herzog"
+date: "16/08/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This R package was create for analysis of Illumina Mouse Methylation Array datasets with minfi. The annotation was downloaded from Illumina (accessed 12 Aug 2022) and follows the development of IlluminaMethylationEPIC packages.
+It is to be used in combination with the IlluminaMouseMethylationanno.12.v1.mm10 package.
+
+As several CpGs have multiple probes, Illumina IDs concatenated from cgID and additinal information are used rather than cg numbers on their own.
+
+The manifest can be applied after an RGset has been created with minfi:
+
+```{r eval=F}
+library(IlluminaMouseMethylationanno.12.v1.mm10)
+library(IlluminaMouseMethylationmanifest)
+
+RGset@annotation <-  c(array = "IlluminaMouseMethylation", annotation = "12.v1.mm10")
+```

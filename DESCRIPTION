@@ -1,6 +1,6 @@
 Package: IlluminaMouseMethylationmanifest
 Title: Illumina Mouse Methylation Array Manifest
-Version: 0.0.0.1000
+Version: 0.0.1
 Authors@R: 
     person("Chiara", "Herzog", , "chiara.herzog@uibk.ac.at", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1572-498X"))
